@@ -1,0 +1,2 @@
+# javaforqaeducation
+Учебный проект.
