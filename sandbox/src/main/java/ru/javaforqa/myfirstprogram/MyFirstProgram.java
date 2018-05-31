@@ -15,12 +15,23 @@ public class MyFirstProgram {
         Rectangle r = new Rectangle(4,6);
 
 		System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
+/*Считаем расстояние между точками*/
+		/*1) задаем значение переменных, означающих координаты точек*/
+		double AxisX1 = 2;
+		double AxisY1 = 4;
+		double AxisX2 = 4;
+		double AxisY2 = 6;
+		/*Выводим результат*/
+		System.out.println("Расстояние между точками равно "+ getDistance(AxisX1,AxisY1,AxisX2,AxisY2));
 	}
 
 	public static void hello(String somebody) {
 		System.out.println("Hello, " + somebody + "!");
 	}
-
+	/*Функция, считающая расстояния между точками*/
+	public static double getDistance(double AxisX1, double AxisY1, double AxisX2, double AxisY2){
+		return Math.sqrt(Math.pow(Double.parseDouble(String.valueOf(AxisX1-AxisX2)),2)+(Math.pow(Double.parseDouble(String.valueOf(AxisY2-AxisY1)),2)));
+	}
 
 
 }
