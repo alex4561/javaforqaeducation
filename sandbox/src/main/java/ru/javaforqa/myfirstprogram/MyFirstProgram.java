@@ -3,7 +3,8 @@ package ru.javaforqa.myfirstprogram;
 public class MyFirstProgram {
 
 	public static void main(String[] args) {
-
+		hello("world");
+		hello("uers");
 		hello("Alexander");
 
 /*Считаем расстояние между точками*/
@@ -13,6 +14,12 @@ public class MyFirstProgram {
 		/*System.out.println("Расстояние между точками равно "+ getDistance(AxisX1,AxisY1,AxisX2,AxisY2));*/
 		System.out.println("Расстояние между точками равно "+ p1.getDistance());
    /* System.out.println("Расстояние между точками равно "+ p2.getDistance());*/
+
+		Square s = new Square(5);
+		System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
+		Rectangle r = new Rectangle(4, 6);
+		System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
+
 
 	}
 
